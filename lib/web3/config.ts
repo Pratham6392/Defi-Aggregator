@@ -1,8 +1,12 @@
 import { ethers } from 'ethers';
+import dotenv from 'dotenv';
+
+dotenv.config();
+
 
 // API Keys
-export const ALCHEMY_API_KEY = 'vZ9oK8UGiqGM0Trx49e80MVkiW2yI0Mn';
-export const INFURA_API_KEY = '3f1d4ff533174d399f6f92e5c8e240dc';
+export const ALCHEMY_API_KEY = process.env.ALCHEMY_API_KEY;
+export const INFURA_API_KEY = process.env.INFURA_API_KEY;
 
 export const SUPPORTED_CHAINS = {
   ETHEREUM: 1,
